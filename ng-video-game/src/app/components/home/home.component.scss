@@ -30,11 +30,12 @@
   }
 
   .games {
+    gap: 20px 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 20px auto;
+    // justify-content: center;
+    // max-width: 1200px;
+     //margin: 20px auto;
   }
 
 
