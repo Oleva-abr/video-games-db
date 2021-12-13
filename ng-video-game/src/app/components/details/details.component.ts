@@ -1,6 +1,6 @@
 import { HttpService } from './../../services/http.service';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Game } from 'src/app/models';
 
@@ -9,7 +9,7 @@ import { Game } from 'src/app/models';
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.scss']
 })
-export class DetailsComponent implements OnInit {
+export class DetailsComponent implements OnInit, OnDestroy {
     gameRating = 0;
     gameId:string='';
     game!: Game;
